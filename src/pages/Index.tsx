@@ -24,14 +24,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <div className="container mx-auto px-4 py-6">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
-            Park<span className="text-purple-400">Vista</span>
-          </h1>
-          <p className="text-slate-300 text-lg">Smart Parking Management System</p>
-        </div>
-
         {/* Navigation */}
         <Navigation activeTab={activeTab} onTabChange={setActiveTab} />
 
