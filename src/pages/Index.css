@@ -1,0 +1,35 @@
+
+.main-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.main-content {
+  margin-top: 32px;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px 8px;
+  }
+  
+  .main-content {
+    margin-top: 16px;
+  }
+  
+  .dashboard-content {
+    gap: 24px;
+  }
+}

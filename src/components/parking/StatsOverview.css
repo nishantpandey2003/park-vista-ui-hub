@@ -1,0 +1,87 @@
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stat-card {
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  border: 1px solid;
+}
+
+.stat-card.available {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(34, 197, 94, 0.1) 100%);
+  border-color: rgba(34, 197, 94, 0.2);
+}
+
+.stat-card.occupied {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(239, 68, 68, 0.1) 100%);
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+.stat-card.rate {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+.stat-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+.stat-card.available .stat-label {
+  color: #86efac;
+}
+
+.stat-card.occupied .stat-label {
+  color: #fca5a5;
+}
+
+.stat-card.rate .stat-label {
+  color: #93c5fd;
+}
+
+.stat-value {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.stat-icon {
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.stat-card.available .stat-icon {
+  background: rgba(34, 197, 94, 0.2);
+}
+
+.stat-card.occupied .stat-icon {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.stat-card.rate .stat-icon {
+  background: rgba(59, 130, 246, 0.2);
+}
+
+.icon {
+  font-size: 24px;
+  display: block;
+}
