@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index.jsx";
-import NotFound from "./pages/NotFound";
+import NotFound from "./pages/NotFound.jsx";
 import './App.css';
 
 const App = () => (
